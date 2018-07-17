@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SevenOaks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/media.css"> 
+	</head>
+
+<body>
+	<section class="slider">
+		<div class="js-slides slides"></div>
+		<div class="js-slides slides slides-1"></div>
+		<a class="slider-btn-prev" onclick="plusDivs(-1)">
+			<div class="prev-arrow"></div>
+		</a>
+		<a class="slider-btn-next" onclick="plusDivs(1)">
+			<div class="next-arrow"></div>
+		</a>
+				<div class="slider-content-wrapper">
+		<div class="slider-content">
+			<header class="header"> <img src="images/logo.png" alt="SevenOaks">
+				<nav class="nav">
+					<div class="search-wrapper">
+					<div class="search-menu">
+						<p><a href="#">Calendar</a></p>
+						<p class="search-line">|</p>
+						<p><a href="#">Blog</a></p>
+						<p class="search-line">|</p>
+						<p><a href="#">Contact us</a></p>
+						</div>
+						<div class="search-icon"></div>
+						<div class="search-decor"><img src="images/search.png" alt=""></div>
+					</div>
+					<ul class="nav-ul">
+						<li> <a href="#">about</a></li>
+						<li class="active"><a href="#">media</a></li>
+						<li> <a href="#">events</a></li>
+						<li> <a href="#">shop</a></li>
+						<li> <a href="#">give</a></li>
+					</ul>
+				</nav>
+			</header>
+			<h1 class="slide-text"><span class="bold">Welcome to SevenOaks website</span> which is run by the friends of SevenOaks.</h1> </div>
+		</div>
+	</section>
+	<section class="content">
+		<div class="cards">
+			<div class="card stories-card">
+				<h3 class="card-header">Stories</h3>
+				<div class="card-text">
+					<p>Read stories of Seven Oaks</p>
+					<div class="card-arrow"></div>
+				</div>
+			</div>
+			<div class="card give-card">
+				<h3 class="card-header">Give online</h3>
+				<div class="card-text">
+					<p>Quick & easy online giving</p>
+					<div class="card-arrow"></div>
+				</div>
+			</div>
+			<div class="card pray-card">
+				<h3 class="card-header">Prayer</h3>
+				<div class="card-text">
+					<p>Submit your prayer request</p>
+					<div class="card-arrow"></div>
+				</div>
+			</div>
+		</div>
+		<div class="events-wrapper">
+			<div class="events">
+				<h2 class="events-header">Upcoming events</h2>
+				<div class="events-line"></div>
+				<div class="event">
+					<div class="event-info">
+						<p class="event-date"><span class="event-day">20</span>
+							<br>July</p>
+						<div>
+							<p class="event-name">Family sunday</p>
+							<p class="event-time">Sunday | 9:30am</p>
+						</div>
+					</div>
+					<div class="event-btn">More</div>
+				</div>
+				<div class="events-line"></div>
+				<div class="event">
+					<div class="event-info">
+						<p class="event-date"><span class="event-day">20</span>
+							<br>July</p>
+						<div>
+							<p class="event-name">Family sunday</p>
+							<p class="event-time">Sunday | 9:30am</p>
+						</div>
+					</div>
+					<div class="event-btn">More</div>
+				</div>
+				<div class="events-line"></div>
+				<div class="event">
+					<div class="event-info">
+						<p class="event-date"><span class="event-day">20</span>
+							<br>July</p>
+						<div>
+							<p class="event-name">Family sunday</p>
+							<p class="event-time">Sunday | 9:30am</p>
+						</div>
+					</div>
+					<a href="#">
+						<div class="event-btn">More</div>
+					</a>
+				</div>
+			</div>
+			<div class="events-about">
+				<h2 class="events-header">SEVENOAKS</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+				<a class="about-more" href="#">READ MORE >></a> </div>
+		</div>
+	</section>
+	
+	<div id="js-modal-form" class="overlay">
+	<form class="form" action="">
+	    <button type="button" class="cross-btn" onclick="closeModal()"></button>
+		<p class="form-header">Subscribe to our newsletters </p>
+		<label class="form-text" for="email">Please enter you email address to receive all news from our site.</label>
+		<input class="form-input" id="email" type="text" placeholder="example@gmail.com">
+		<p class="form-text italic">* Don’t worry you’ll not be spammed</p>
+		<button type="button" class="form-btn" onclick="">Subscribe</button>
+	</form>
+	</div>
+	
+	<footer class="footer">
+	<div class="footer-content">
+	<div>
+		<h3 class="footer-title">SIGNUP TO OUR NEWSLETTER</h3>
+		<button type="button" class="footer-btn" onclick="showModal()">Subscribe</button>
+		</div>
+		<div class="service-time">
+		<h3 class="footer-title">SERVICE TIMES</h3>
+		<p class="footer-subtitle">Sundays at 9:30 & 11:30 AM</p>
+		<p class="footer-small-text">Lorem ipsum dolor sit amet.</p>
+		</div>
+
+		<div>
+			<h3 class="footer-title footer-icons-title">CONNECT WITH US</h3>
+		<div class="icon-facebook footer-icons"></div>
+		<div class="icon-twitter footer-icons"></div>
+		<div class="icon-youtube footer-icons"></div>
+		<div class="icon-paypal footer-icons"></div>
+		<div class="icon-email footer-icons"></div>
+
+		</div>
+
+			<div class="footer-line"></div>
+	<p class="footer-small-text miriad">© Copyright 2017 SevenOaks. All rights reserved.  Privacy Policy  |  Share This</p>
+	</div>
+	
+	
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
